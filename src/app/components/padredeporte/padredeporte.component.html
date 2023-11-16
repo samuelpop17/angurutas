@@ -1,0 +1,9 @@
+<h1>Padre deporte</h1>
+<h2>{{mensaje}}</h2>
+
+<ul>
+    <li *ngFor="let deporte of deportes;let i=index">
+        <app-hijodeporte [deporte]="deporte"
+            (seleccionarFavoritoPadre)="seleccionarFavoritoPadre( $event )"></app-hijodeporte>
+    </li>
+</ul>
